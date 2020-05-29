@@ -1,0 +1,21 @@
+body {
+	font-family: Roboto;
+	background-color: #fbfbfb;
+}
+header {
+	height: 768px;
+	background: url('img/Ellipse.jpg');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: auto 100%;
+	box-sizing: content-box;
+}
+.services-box {
+	background-color: white;
+}
+.copyright-box {
+	background-color: #31293c;
+}
+.upper-menu__list {
+	list-style-type: none ;
+}

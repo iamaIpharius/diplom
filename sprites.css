@@ -1,0 +1,28 @@
+.vk, .facebook-logo, .twitter-logo-silhouette, .instagram {
+	background: url('img/sprites.png') no-repeat;
+}
+
+.vk {
+	background-position: -7px -14px;
+	width: 35px;
+	height: 21px;
+}
+
+.facebook-logo {
+	background-position: -67px -12px;
+	width: 16px;
+	height: 28px;
+}
+
+.twitter-logo-silhouette {
+	background-position: -111px -12px;
+	width: 29px;
+	height: 25px;
+}
+
+.instagram {
+	background-position: -161px -12px;
+	width: 25px;
+	height: 25px;
+}
+
