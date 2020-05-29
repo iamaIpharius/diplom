@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	font-family: Arial;
 }
-.callback {
+.phone-box__callback, .social-networks__callback {
 	width: 207px;
 	height: 45px;
 	background-color: #fbfbfb;

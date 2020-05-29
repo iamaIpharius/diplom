@@ -10,6 +10,7 @@ header {
 	background-size: auto 100%;
 	box-sizing: content-box;
 }
+
 .services-box {
 	background-color: white;
 }
@@ -17,5 +18,37 @@ header {
 	background-color: #31293c;
 }
 .upper-menu__list {
-	list-style-type: none ;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	margin-top: 10px;
+}
+.upper-menu__list__element {
+	color: black;
+	margin-right: 35px;
+	font-size: 16px; 
+}
+.phone-box, .upper-menu{
+	padding-top: 45px;
+}
+.phone-box__tel  {
+	font-size: 16px; 
+	font-weight: bold;
+	color: black;
+	float: right;
+	margin: 10px 35px 0 0;
+}
+.phone-box__callback {
+	float: right;
+}
+.name-box {
+	margin-top: 240px;
+}
+.name-box h1 {
+	font-size: 80px;
+	font-weight: bold;
+}
+small {
+	font-size: 25px;
+	color: #8993ad;
 }
