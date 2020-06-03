@@ -48,7 +48,50 @@ header {
 	font-size: 80px;
 	font-weight: bold;
 }
-small {
+.name-box small {
 	font-size: 25px;
 	color: #8993ad;
+}
+.headline {
+	display: flex;
+	font-size: 54px;
+	font-weight: bold;
+	justify-content: center;
+	padding: 100px 0;
+}
+.examples img, small{
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.examples {
+	text-align: center;
+}
+.examples small {
+	font-size: 20px;
+	color: #8993ad;
+}
+.button-box button {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.button-box {
+	padding: 100px 0;
+}
+.price-box {
+	box-sizing: content-box;
+	height: 364px;
+	background: linear-gradient(to top right, #ff8f5a, #ff2f96);
+}
+.price-text {
+	color: white;
+
+}
+.price-text h2 {
+	font-size: 45px;
+	margin-top: 90px;
+}
+.price-text h6 {
+	margin-top: 50px;
 }
