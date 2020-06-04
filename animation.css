@@ -1,0 +1,91 @@
+.header-animation {
+
+  display: inline-block;
+  background: linear-gradient(to top, #ff8f5a, #ff2f96);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 44px;
+  font-weight: bold;
+  animation-name: rotation;
+  animation-timing-function: linear;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotation {
+  0% {transform: none;}
+  100% {transform: rotate(360deg);}
+}
+.header-first {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  font-size: 44px;
+}
+.header-second {
+  position: absolute;
+  left: 9%;
+  top: 15%;
+}
+.header-third {
+  position: absolute;
+  left: 18%;
+  top: 65%;
+  font-size: 38px;
+}
+.header-fourth {
+  position: absolute;
+  left: 40%;
+  top: 55%;
+  font-size: 44px;
+}
+.header-fifth {
+  position: absolute;
+  left: 45%;
+  top: 22%;
+  font-size: 22px;
+}
+
+.price-animation {
+
+  display: inline-block;
+  color: white;
+  font-size: 44px;
+  font-weight: bold;
+  animation-name: rotation;
+  animation-timing-function: linear;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotation {
+  0% {transform: none;}
+  100% {transform: rotate(360deg);}
+}
+.price-first {
+  position: absolute;
+  left: 10%;
+  top: 70%;
+  font-size: 44px;
+}
+.price-second {
+  position: absolute;
+  left: 7%;
+  top: 15%;
+}
+.price-third {
+  position: absolute;
+  left: 85%;
+  top: 20%;
+  font-size: 38px;
+}
+.price-fourth {
+  position: absolute;
+  left: 90%;
+  top: 60%;
+  font-size: 44px;
+}
+.price-fifth {
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  font-size: 22px;
+}

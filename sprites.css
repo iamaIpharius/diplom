@@ -1,5 +1,12 @@
+.social-networks__logos {
+	display: flex;
+
+}
+
 .vk, .facebook-logo, .twitter-logo-silhouette, .instagram {
 	background: url('img/sprites.png') no-repeat;
+	display: inline-flex;
+	margin-right: 30px;
 }
 
 .vk {

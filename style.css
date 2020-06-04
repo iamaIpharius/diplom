@@ -83,6 +83,7 @@ header {
 	box-sizing: content-box;
 	height: 364px;
 	background: linear-gradient(to top right, #ff8f5a, #ff2f96);
+	position: relative;
 }
 .price-text {
 	color: white;
@@ -94,4 +95,49 @@ header {
 }
 .price-text h6 {
 	margin-top: 50px;
+}
+.contacts {
+	padding: 85px 0 95px;
+}
+.downer-menu__list {
+	list-style: none;
+	padding: 0;
+	margin-top: 0px;
+}
+.downer-menu__list li {
+	margin-bottom: 20px;
+}
+.downer-menu__list__element {
+	color: #9ca5ba;
+	font-size: 16px; 
+}
+.mail {
+	display: flex;
+	
+}
+.tel {
+	margin-bottom: 40px;
+	display: flex;
+}
+.mail-box__tel, .mail-box__mail {
+	font-size: 20px;
+	color: black;
+	margin-left: 7px;
+}
+.mail-box__tel, .mail-box__mail, .mail-box__icon-tel, .mail-box__icon-mail {
+	display: inline-flex;
+	align-self: center;
+}
+.copyright {
+	display: flex;
+	padding: 25px 0;
+}
+.copyright__itself {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.copyright__itself h6 {
+	color: white;
+	margin: 0;
 }

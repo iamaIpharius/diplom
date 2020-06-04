@@ -13,6 +13,10 @@ body {
 	outline: none;
 	cursor: pointer;
 }
+.social-networks__callback {
+ margin-bottom: 30px;
+ width: 250px;
+}
 .left-arrow {
 	width: 61px;
 	height: 60px;

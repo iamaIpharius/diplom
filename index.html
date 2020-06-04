@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="button.css">
     <link rel="stylesheet" type="text/css" href="sprites.css">
     <link rel="stylesheet" type="text/css" href="media.css">
+    <link rel="stylesheet" type="text/css" href="animation.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -33,10 +34,10 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="col-4 phone-box">
+				<div class="col-3 phone-box">
 					<a class="phone-box__tel" href="tel:+79930218841">+7(993)021-88-41</a>
 				</div>
-				<div class="col-2 phone-box">
+				<div class="col-3 phone-box">
 					<button class="phone-box__callback">Заказать звонок</button>
 				</div>
 				<div class="w-100"></div>
@@ -46,6 +47,11 @@
 				</div>
 			</div>	
 		</div>
+		<div class="header-animation header-first">#</div>
+        <div class="header-animation header-second">{ }</div>
+        <div class="header-animation header-third">&lt;/&gt;</div>
+        <div class="header-animation header-fourth">&lt;div&gt;</div>
+        <div class="header-animation header-fifth">&lt;div&gt;</div>
 	</header>
 	<main>
 		<div class="services-box">
@@ -149,33 +155,44 @@
 					</div>
 				</div>
 			</div>
+			<div class="price-animation price-first">#</div>
+	        <div class="price-animation price-second">{ }</div>
+	        <div class="price-animation price-third">&lt;/&gt;</div>
+	        <div class="price-animation price-fourth">{ }</div>
+	        <div class="price-animation price-fifth">&lt;div&gt;</div>
 		</div>
-			
 	</main>
 	<footer>
 		<div class="container">
 			<div class="row contacts">
 				<div class="col-4 downer-menu">
-					<ul class="downer-menu__list">
-						<li><a href="">Услуги</a></li>
-						<li><a href="">Портфолио</a></li>
-						<li><a href="">Стоимость</a></li>
-					</ul>
+					<nav>
+						<ul class="downer-menu__list">
+							<li><a class="downer-menu__list__element" href="">Услуги</a></li>
+							<li><a class="downer-menu__list__element" href="">Портфолио</a></li>
+							<li><a class="downer-menu__list__element" href="">Стоимость</a></li>
+						</ul>	
+					</nav>
 				</div>
 				<div class="col-4 mail-box">
-					<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-					<a class="phone-box__tel" href="tel:+79930218841">+7(993)021-88-41</a>
-					<br>
-					<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-					<a class="mail-box__mail" href="mail:ssturmmann@yandex.ru">ssturmmann@yandex.ru</a>
+					<div class="tel">
+						<i class="fa fa-phone fa-2x mail-box__icon-tel" aria-hidden="true"></i>
+						<a class="mail-box__tel" href="tel:+79930218841">+7(993)021-88-41</a>
+					</div>
+					<div class="mail">
+						<i class="fa fa-envelope fa-2x mail-box__icon-mail" aria-hidden="true"></i>
+						<a class="mail-box__mail" href="mailto:ssturmmann@yandex.ru">ssturmmann@yandex.ru</a>
+					</div>
 				</div>
 				<div class="col-4 social-networks">
 					<button class="social-networks__callback">Заказать звонок</button>
 					<br>
-					<div class="vk"><a href="#"></a></div>
-				    <div class="facebook-logo"><a href="#"></a></div>
-				    <div class="twitter-logo-silhouette"><a href="#"></a></div>
-				    <div class="instagram"><a href="#"></a></div>
+					<div class="social-networks__logos">
+						<div class="vk"><a href="#"></a></div>
+					    <div class="facebook-logo"><a href="#"></a></div>
+					    <div class="twitter-logo-silhouette"><a href="#"></a></div>
+					    <div class="instagram"><a href="#"></a></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -183,7 +200,7 @@
 			<div class="container">
 				<div class="row copyright">
 					<div class="col copyright__itself">
-						&copy; Табарков Алексей, 2020
+						<h6>&copy; Табарков Алексей, 2020</h6>
 					</div>
 				</div>
 			</div>

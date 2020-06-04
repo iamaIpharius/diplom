@@ -12,3 +12,17 @@
   	text-decoration-line: underline;
   	border-bottom: 1px solid #fc557c;
 }
+.downer-menu__list__element:hover {
+  background: linear-gradient(to top, #ff8f5a, #ff2f96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration-line: underline;
+    border-bottom: 1px solid #fc557c;
+}
+.mail-box__tel:hover, .mail-box__mail:hover {
+  background: linear-gradient(to top, #ff8f5a, #ff2f96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration-line: underline;
+    border-bottom: 1px solid #fc557c;
+}
