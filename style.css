@@ -66,6 +66,10 @@ header {
 }
 .examples {
 	text-align: center;
+	margin-bottom: 25px;
+}
+.examples img {
+	margin-bottom: 25px;
 }
 .examples small {
 	font-size: 20px;
