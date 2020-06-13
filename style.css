@@ -2,6 +2,7 @@ body {
 	font-family: Roboto;
 	background-color: #fbfbfb;
 }
+
 header {
 	height: 768px;
 	background: url('img/Ellipse.jpg');
@@ -51,6 +52,7 @@ header {
 .name-box small {
 	font-size: 25px;
 	color: #8993ad;
+	margin-bottom: 50px;
 }
 .headline {
 	display: flex;

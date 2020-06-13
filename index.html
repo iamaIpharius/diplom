@@ -25,15 +25,49 @@
 	<title>Дипломный проект</title>
 </head>
 <body>
+	<div class="modal" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Привет друг!</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p>Чтобы заказать звонок, напиши мне на почту или в Telegram!</p>
+	        <p><a class="mail-box__tel" href="tel:+79930218841">+7(993)021-88-41</a></p>
+	        <p><a class="mail-box__mail" href="mailto:ssturmmann@yandex.ru">ssturmmann@yandex.ru</a></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal order" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Привет друг!</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p>Чтобы узнать стоимость или заказать проект, напиши мне на почту или в Telegram!</p>
+	        <p><a class="mail-box__tel" href="tel:+79930218841">+7(993)021-88-41</a></p>
+	        <p><a class="mail-box__mail" href="mailto:ssturmmann@yandex.ru">ssturmmann@yandex.ru</a></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	<header>
 		<div class="container">
 			<div class="row first-infomartion">
 				<div class="col-6 upper-menu">
 					<nav>
 						<ul class="upper-menu__list">
-							<li><a class="upper-menu__list__element" href="">Услуги</a></li>
-							<li><a class="upper-menu__list__element" href="">Портфолио</a></li>
-							<li><a class="upper-menu__list__element" href="">Стоимость</a></li>
+							<li><a class="upper-menu__list__element" href="#services">Услуги</a></li>
+							<li><a class="upper-menu__list__element" href="#my-works">Портфолио</a></li>
+							<li><a class="upper-menu__list__element" href="#price">Стоимость</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -41,12 +75,15 @@
 					<a class="phone-box__tel" href="tel:+79930218841">+7(993)021-88-41</a>
 				</div>
 				<div class="col-3 phone-box">
-					<button class="phone-box__callback">Заказать звонок</button>
+					<button type="button" data-toggle="modal" data-target=".modal" class="phone-box__callback">Заказать звонок</button>
 				</div>
 				<div class="w-100"></div>
 				<div class="col name-box">
 					<h1>Табарков Алексей</h1>
 					<small>Python-разработчик</small>
+					<button type="button" data-toggle="modal" data-target=".order" class="regular-button">
+					      Узнать больше
+					    </button>
 				</div>
 			</div>	
 		</div>
@@ -60,7 +97,7 @@
 		<div class="services-box">
 			<div class="container">
 				<div class="row services">
-					<div class="col headline">
+					<div class="col headline" id="services">
 						Что я делаю
 					</div>
 					<div class="w-100"></div>
@@ -86,7 +123,7 @@
 					</div>
 					<div class="w-100"></div>
 					<div class="col button-box">
-						<button class="regular-button">
+						<button type="button" data-toggle="modal" data-target=".order" class="regular-button">
 					      Узнать стоимость
 					    </button>
 					</div>
@@ -95,7 +132,7 @@
 		</div>
 		<div class="my-works-box">
 			<div class="container">
-				<div class="row my-works">
+				<div class="row my-works" id="my-works">
 					<div class="col headline">
 						Мои работы
 					</div>
@@ -148,7 +185,7 @@
 					</div>
 					<div class="w-100"></div>
 					<div class="col button-box">
-						<button class="regular-button">
+						<button type="button" data-toggle="modal" data-target=".order" class="regular-button">
 					      Заказать проект
 					    </button>
 					</div>
@@ -158,7 +195,7 @@
 		<div class="price-box">
 			<div class="container">
 				<div class="row price">
-					<div class="col price-text">
+					<div class="col price-text" id="price">
 						<h2>Адаптивная верстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</h2>
 						<h6>* Срок и стоимость могут отличаться от заявленных и расчитываются индивидуально, в зависимости от сложности задач.</h6>
 					</div>
@@ -177,9 +214,9 @@
 				<div class="col-4 downer-menu">
 					<nav>
 						<ul class="downer-menu__list">
-							<li><a class="downer-menu__list__element" href="">Услуги</a></li>
-							<li><a class="downer-menu__list__element" href="">Портфолио</a></li>
-							<li><a class="downer-menu__list__element" href="">Стоимость</a></li>
+							<li><a class="downer-menu__list__element" href="#services">Услуги</a></li>
+							<li><a class="downer-menu__list__element" href="#my-works">Портфолио</a></li>
+							<li><a class="downer-menu__list__element" href="#price">Стоимость</a></li>
 						</ul>	
 					</nav>
 				</div>
@@ -194,7 +231,7 @@
 					</div>
 				</div>
 				<div class="col-4 social-networks">
-					<button class="social-networks__callback">Заказать звонок</button>
+					<button type="button" data-toggle="modal" data-target=".modal" class="social-networks__callback">Заказать звонок</button>
 					<br>
 					<div class="social-networks__logos">
 						<div class="vk"><a href="#"></a></div>
