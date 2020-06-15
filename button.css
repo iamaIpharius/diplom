@@ -20,8 +20,8 @@ button:focus {
 }
 .left-arrow {
 	position: absolute;
-	top: 120px;
-	left: -5px;
+	top: 33%;
+	left: 0%;
 	width: 61px;
 	height: 60px;
 	background-image: url('img/arrow.png');
@@ -33,8 +33,8 @@ button:focus {
 	z-index: 10;
 }
 .right-arrow {
-	top: 120px;
-	left: 1085px;
+	top: 33%;
+	left: 95%;
 	position: absolute;
 	width: 61px;
 	height: 60px;
@@ -65,4 +65,13 @@ button:focus {
 	background: linear-gradient(to top, #ff8f5a, #ff2f96);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
+}
+.menu-button {
+	display: none;
+	width: 45px;
+	height: 32px;
+	background-color: white;
+	background-image: url('img/menubtn.png');
+	background-repeat: no-repeat;
+	border: 0;
 }

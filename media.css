@@ -26,3 +26,37 @@
     text-decoration-line: underline;
     border-bottom: 1px solid #fc557c;
 }
+
+
+
+
+
+
+@media (max-width: 1500px) {
+  .name-box h1 {
+    font-size: 54px;
+  }
+}
+@media (max-width: 1199px) {
+  header {
+    background: url('img/Ellipse1024.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+    box-sizing: content-box;
+  }
+  .right-arrow {
+    left: 94%;
+  }
+}
+@media (max-width: 1024px) {
+  .left-arrow, .right-arrow {
+    display: none;
+  }
+  .upper-menu__nav {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}

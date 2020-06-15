@@ -62,19 +62,20 @@
 	<header>
 		<div class="container">
 			<div class="row first-infomartion">
-				<div class="col-6 upper-menu">
-					<nav>
+				<div class="col-6 my-auto upper-menu">
+					<nav class="upper-menu__nav">
 						<ul class="upper-menu__list">
 							<li><a class="upper-menu__list__element" href="#services">Услуги</a></li>
 							<li><a class="upper-menu__list__element" href="#my-works">Портфолио</a></li>
 							<li><a class="upper-menu__list__element" href="#price">Стоимость</a></li>
 						</ul>
 					</nav>
+					<button class="menu-button"></button>
 				</div>
-				<div class="col-3 phone-box">
+				<div class="col-3 my-auto phone-box">
 					<a class="phone-box__tel" href="tel:+79930218841">+7(993)021-88-41</a>
 				</div>
-				<div class="col-3 phone-box">
+				<div class="col-3 my-auto phone-box">
 					<button type="button" data-toggle="modal" data-target=".modal" class="phone-box__callback">Заказать звонок</button>
 				</div>
 				<div class="w-100"></div>
@@ -100,34 +101,37 @@
 					<div class="col headline" id="services">
 						Что я делаю
 					</div>
-					<div class="w-100"></div>
-					<div class="col-3 examples lending">
-						<img src="img/tools-and-utensils.png">
+					</div>
+				<div class="row justify-content-around services">
+						<div class="col-xl-3 col-sm-5 col-12 examples lending">
+							<img src="img/tools-and-utensils.png">
 
-						<small>Вёрстка лендинг-страниц и сайтов любой сложности</small>
-					</div>
-					<div class="col-3 examples adopt">
-						<img src="img/responsive.png">
+							<small>Вёрстка лендинг-страниц и сайтов любой сложности</small>
+						</div>
+						<div class="col-xl-3 col-sm-5 col-12 examples adopt">
+							<img src="img/responsive.png">
 
-						<small>Адаптивная верстка под все браузеры и устройства</small>
-					</div>
-					<div class="col-3 examples frontend">
-						<img src="img/programming.png">
+							<small>Адаптивная верстка под все браузеры и устройства</small>
+						</div>
+						<div class="col-xl-3 col-sm-5 col-12 examples frontend">
+							<img src="img/programming.png">
 
-						<small>Frontend-разработка и программирование</small>
-					</div>
-					<div class="col-3 examples fix">
-						<img src="img/coding.png">
+							<small>Frontend-разработка и программирование</small>
+						</div>
+						<div class="col-xl-3 col-sm-5 col-12 examples fix">
+							<img src="img/coding.png">
 
-						<small>Исправление и доработка существующей вёрстки</small>
-					</div>
-					<div class="w-100"></div>
-					<div class="col button-box">
-						<button type="button" data-toggle="modal" data-target=".order" class="regular-button">
-					      Узнать стоимость
-					    </button>
-					</div>
+							<small>Исправление и доработка существующей вёрстки</small>
+						</div>
 				</div>
+				<div class="row justify-content-center services">
+						<div class="col-4 button-box">
+							<button type="button" data-toggle="modal" data-target=".order" class="regular-button">
+					      		Узнать стоимость
+					    	</button>
+						</div>			
+				</div>
+				
 			</div>
 		</div>
 		<div class="my-works-box">
@@ -211,7 +215,7 @@
 	<footer>
 		<div class="container">
 			<div class="row contacts">
-				<div class="col-4 downer-menu">
+				<div class="col-xl-4 col-sm-3 downer-menu">
 					<nav>
 						<ul class="downer-menu__list">
 							<li><a class="downer-menu__list__element" href="#services">Услуги</a></li>
@@ -220,7 +224,7 @@
 						</ul>	
 					</nav>
 				</div>
-				<div class="col-4 mail-box">
+				<div class="col-xl-4 col-sm-5 mail-box">
 					<div class="tel">
 						<i class="fa fa-phone fa-2x mail-box__icon-tel" aria-hidden="true"></i>
 						<a class="mail-box__tel" href="tel:+79930218841">+7(993)021-88-41</a>
@@ -230,7 +234,7 @@
 						<a class="mail-box__mail" href="mailto:ssturmmann@yandex.ru">ssturmmann@yandex.ru</a>
 					</div>
 				</div>
-				<div class="col-4 social-networks">
+				<div class="col-xl-4 col-sm-4 social-networks">
 					<button type="button" data-toggle="modal" data-target=".modal" class="social-networks__callback">Заказать звонок</button>
 					<br>
 					<div class="social-networks__logos">

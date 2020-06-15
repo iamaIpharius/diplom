@@ -18,7 +18,7 @@
 .header-first {
   position: absolute;
   left: 10%;
-  top: 40%;
+  top: 30%;
   font-size: 44px;
 }
 .header-second {
@@ -29,7 +29,7 @@
 .header-third {
   position: absolute;
   left: 18%;
-  top: 65%;
+  top: 70%;
   font-size: 38px;
 }
 .header-fourth {
@@ -63,24 +63,24 @@
 .price-first {
   position: absolute;
   left: 10%;
-  top: 70%;
+  top: 75%;
   font-size: 44px;
 }
 .price-second {
   position: absolute;
   left: 7%;
-  top: 15%;
+  top: 10%;
 }
 .price-third {
   position: absolute;
   left: 85%;
-  top: 20%;
+  top: 15%;
   font-size: 38px;
 }
 .price-fourth {
   position: absolute;
   left: 90%;
-  top: 60%;
+  top: 52%;
   font-size: 44px;
 }
 .price-fifth {
