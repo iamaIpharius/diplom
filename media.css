@@ -224,6 +224,7 @@
 }
 @media (max-width: 320px) {
   header {
+    height: 468px;
     background: url('img/background320.jpg');
     background-repeat: no-repeat;
     background-position: right;
