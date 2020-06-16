@@ -4,7 +4,7 @@ button:active,
 button:focus {
     outline: none;
 }
-.phone-box__callback, .social-networks__callback {
+.phone-box__callback, .social-networks__callback, .callback-box__callback {
 	width: 207px;
 	height: 45px;
 	background-color: #fbfbfb;
@@ -13,6 +13,15 @@ button:focus {
 	font-size: 16px;
 	outline: none;
 	cursor: pointer;
+}
+.callback-box__callback-icon {
+	display: none;
+	width: 26px;
+	height: 26px;
+	background-color: white;
+	background-image: url('img/callback-icon.png');
+	background-repeat: no-repeat;
+	border: 0;
 }
 .social-networks__callback {
  margin-bottom: 30px;
@@ -72,6 +81,15 @@ button:focus {
 	height: 32px;
 	background-color: white;
 	background-image: url('img/menubtn.png');
+	background-repeat: no-repeat;
+	border: 0;
+}
+.menu-button-small {
+	display: none;
+	width: 24px;
+	height: 18px;
+	background-color: white;
+	background-image: url('img/menubtn-small.png');
 	background-repeat: no-repeat;
 	border: 0;
 }

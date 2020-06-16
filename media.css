@@ -59,4 +59,175 @@
   .menu-button {
     display: block;
   }
+  .price-first, .price-fourth {
+    display: none;
+  }
+  .price-second {
+    font-size: 32px;
+    left: 17%;
+  }
+  .price-third {
+    font-size: 40px;
+    top: 65%;
+  }
+  .price-fifth {
+    font-size: 25px;
+    left: 45%;
+  }
 }
+
+@media (max-width: 991px) {
+  .name-box h1 {
+    font-size: 30px;
+  }
+  .name-box small {
+    font-size: 16px;
+  }
+  .price-fifth {
+    font-size: 25px;
+    left: 85%;
+    top: 15%;
+  }
+  .vk, .facebook-logo, .twitter-logo-silhouette, .instagram {
+    margin-right: 20px;
+  }
+  .phone-box__callback, .social-networks__callback, .callback-box__callback {
+    width: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .phone-box {
+    justify-content: center;
+  }
+  .callback-box__callback {
+    display: none;
+  }
+  .callback-box__callback-icon {
+    display: block;
+  }
+  .menu-button {
+    display: none;
+  }
+  .menu-button-small {
+    display: block;
+  }
+  .name-box {
+    display: none;
+  }
+  .down-name-box {
+    display: flex;
+  }
+  .name-box {
+    margin-top: 20px;
+  }
+  .name-box h1 {
+    font-size: 45px;
+  }
+  .name-box small {
+    font-size: 24px;
+  }
+  .price-box {
+    height: 436px;
+  }
+  .price-text h2 {
+    font-size: 42px;
+    margin-top: 50px;
+  }
+  .price-text h6 {
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  .price-animation {
+    display: none;
+  }
+  .downer-menu__list__element {
+    font-size: 20px;
+  }
+  .tel {
+    margin-bottom: 25px;
+  }
+  .mail-box {
+    margin: 30px 0;
+  }
+  .social-networks__callback {
+    width: 240px;
+  }
+
+
+  .header-first {
+    left: 25%;
+    top: 30%;
+    font-size: 24px;
+  }
+  .header-second {
+    left: 32%;
+    top: 15%;
+    font-size: 24px;
+  }
+  .header-third {
+    left: 29%;
+    top: 40%;
+    font-size: 38px;
+  }
+  .header-fourth {
+    left: 75%;
+    top: 25%;
+    font-size: 24px;
+  }
+  .header-fifth {
+    left: 45%;
+    top: 10%;
+    font-size: 22px;
+  }
+}
+
+
+
+@media (max-width: 510px) {
+  .price-text h2 {
+    font-size: 28px;
+    margin-top: 50px;
+  }
+  .price-text h6 {
+    font-size: 16px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 420px) {
+    .name-box h1 {
+      font-size: 30px;
+    }
+    .name-box small {
+      font-size: 16px;
+    }
+    .headline {
+      font-size: 30px;
+      padding: 50px 0;
+    }
+    .phone-box__tel  { 
+      font-size: 15px;
+      font-weight: normal;
+    }
+    .button-box {
+      padding: 50px 0;
+    }
+    .copyright__itself h6 {
+      font-size: 12px;
+      font-weight: normal;
+    }
+    .mail-box__tel, .mail-box__mail {
+      font-size: 16px;
+      color: black;
+      margin-left: 7px;
+    }
+
+}
+@media (max-width: 320px) {
+  header {
+    background: url('img/background320.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+    box-sizing: content-box;
+  }
+} 

@@ -10,8 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="button.css">
     <link rel="stylesheet" type="text/css" href="sprites.css">
-    <link rel="stylesheet" type="text/css" href="media.css">
     <link rel="stylesheet" type="text/css" href="animation.css">
+    <link rel="stylesheet" type="text/css" href="media.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -62,7 +62,7 @@
 	<header>
 		<div class="container">
 			<div class="row first-infomartion">
-				<div class="col-6 my-auto upper-menu">
+				<div class="col-md-6 col-3 my-auto upper-menu">
 					<nav class="upper-menu__nav">
 						<ul class="upper-menu__list">
 							<li><a class="upper-menu__list__element" href="#services">Услуги</a></li>
@@ -71,12 +71,14 @@
 						</ul>
 					</nav>
 					<button class="menu-button"></button>
+					<button class="menu-button-small"></button>
 				</div>
-				<div class="col-3 my-auto phone-box">
+				<div class="col-md-3 col-6 my-auto phone-box">
 					<a class="phone-box__tel" href="tel:+79930218841">+7(993)021-88-41</a>
 				</div>
-				<div class="col-3 my-auto phone-box">
-					<button type="button" data-toggle="modal" data-target=".modal" class="phone-box__callback">Заказать звонок</button>
+				<div class="col-md-3 col-3 my-auto callback-box">
+					<button type="button" data-toggle="modal" data-target=".modal" class="callback-box__callback">Заказать звонок</button>
+					<button type="button" data-toggle="modal" data-target=".modal" class="callback-box__callback-icon"></button>
 				</div>
 				<div class="w-100"></div>
 				<div class="col name-box">
@@ -95,37 +97,51 @@
         <div class="header-animation header-fifth">&lt;div&gt;</div>
 	</header>
 	<main>
+		
 		<div class="services-box">
 			<div class="container">
+				<div class="row down-name">
+					<div class="col-12 name-box down-name-box">
+						<h1>Табарков Алексей</h1>
+					</div>
+					<div class="col-12 name-box down-name-box">
+						<small>Python-разработчик</small>
+					</div>
+					<div class="col-12 name-box down-name-box">
+						<button type="button" data-toggle="modal" data-target=".order" class="regular-button">
+							      Узнать больше
+						</button>
+					</div>
+				</div>
 				<div class="row services">
 					<div class="col headline" id="services">
 						Что я делаю
 					</div>
 					</div>
 				<div class="row justify-content-around services">
-						<div class="col-xl-3 col-sm-5 col-12 examples lending">
+						<div class="col-xl-3 col-sm-5 col-10 examples lending">
 							<img src="img/tools-and-utensils.png">
 
 							<small>Вёрстка лендинг-страниц и сайтов любой сложности</small>
 						</div>
-						<div class="col-xl-3 col-sm-5 col-12 examples adopt">
+						<div class="col-xl-3 col-sm-5 col-10 examples adopt">
 							<img src="img/responsive.png">
 
 							<small>Адаптивная верстка под все браузеры и устройства</small>
 						</div>
-						<div class="col-xl-3 col-sm-5 col-12 examples frontend">
+						<div class="col-xl-3 col-sm-5 col-10 examples frontend">
 							<img src="img/programming.png">
 
 							<small>Frontend-разработка и программирование</small>
 						</div>
-						<div class="col-xl-3 col-sm-5 col-12 examples fix">
+						<div class="col-xl-3 col-sm-5 col-10 examples fix">
 							<img src="img/coding.png">
 
 							<small>Исправление и доработка существующей вёрстки</small>
 						</div>
 				</div>
-				<div class="row justify-content-center services">
-						<div class="col-4 button-box">
+				<div class="row services">
+						<div class="col button-box">
 							<button type="button" data-toggle="modal" data-target=".order" class="regular-button">
 					      		Узнать стоимость
 					    	</button>
@@ -214,8 +230,8 @@
 	</main>
 	<footer>
 		<div class="container">
-			<div class="row contacts">
-				<div class="col-xl-4 col-sm-3 downer-menu">
+			<div class="row justify-content-around contacts">
+				<div class="col-xl-4 col-md-3 col-10 downer-menu">
 					<nav>
 						<ul class="downer-menu__list">
 							<li><a class="downer-menu__list__element" href="#services">Услуги</a></li>
@@ -224,7 +240,7 @@
 						</ul>	
 					</nav>
 				</div>
-				<div class="col-xl-4 col-sm-5 mail-box">
+				<div class="col-xl-4 col-md-5 col-10 mail-box">
 					<div class="tel">
 						<i class="fa fa-phone fa-2x mail-box__icon-tel" aria-hidden="true"></i>
 						<a class="mail-box__tel" href="tel:+79930218841">+7(993)021-88-41</a>
@@ -234,7 +250,7 @@
 						<a class="mail-box__mail" href="mailto:ssturmmann@yandex.ru">ssturmmann@yandex.ru</a>
 					</div>
 				</div>
-				<div class="col-xl-4 col-sm-4 social-networks">
+				<div class="col-xl-4 col-md-4 col-10 social-networks">
 					<button type="button" data-toggle="modal" data-target=".modal" class="social-networks__callback">Заказать звонок</button>
 					<br>
 					<div class="social-networks__logos">
