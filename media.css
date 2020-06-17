@@ -60,7 +60,7 @@
   .upper-menu__nav {
     display: none;
   }
-  .menu-button {
+  .upper-menu-button {
     display: block;
   }
   .price-first, .price-fourth {
@@ -109,10 +109,10 @@
   .callback-box__callback-icon {
     display: block;
   }
-  .menu-button {
+  .upper-menu-button {
     display: none;
   }
-  .menu-button-small {
+  .upper-menu-button-small {
     display: block;
   }
   .name-box {
