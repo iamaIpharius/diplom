@@ -25,33 +25,43 @@
 	<title>Дипломный проект</title>
 </head>
 <body>
-	<div class="modal" tabindex="-1" role="dialog">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title">Привет друг!</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+	<!-- всплывающещ окно Заказать звонок -->
+
+	<div class="modal callback-window" tabindex="-1" role="dialog">
+	  <div class="modal-dialog callback-window-dialog" role="document">
+	    <div class="modal-content callback-window-content">
+	      <div class="modal-header callback-window__header">
+	        <h5 class="modal-title callback-window__title">Привет друг!</h5>
+	        <button type="button" class="close callback-window__close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
 	      </div>
-	      <div class="modal-body">
-	        <p>Чтобы заказать звонок, напиши мне на почту или в Telegram!</p>
-	        <p><a class="mail-box__tel" href="tel:+79930218841">+7(993)021-88-41</a></p>
-	        <p><a class="mail-box__mail" href="mailto:ssturmmann@yandex.ru">ssturmmann@yandex.ru</a></p>
+	      <div class="modal-body callback-window__body">
+	        <p>Чтобы заказать звонок, оставь свой номер телефона!</p>
+	        <label for="callback-window__number">Номер телефона</label>
+    		<input type="number" class="form-control" id="callback-window__number">
+    		
 	      </div>
+	      <div class="modal-footer callback-window__footer">
+ 			<button type="submit" class="btn btn-primary callback-window__send">Отправить</button>
+ 			</div>
 	    </div>
 	  </div>
 	</div>
-	<div class="modal order" tabindex="-1" role="dialog">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title">Привет друг!</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+	<!-- всплывающещ окно узнать стоимость и тд -->
+
+	<div class="modal order-window" tabindex="-1" role="dialog">
+	  <div class="modal-dialog order-window-dialog" role="document">
+	    <div class="modal-content order-window-content">
+	      <div class="modal-header order-window__header">
+	        <h5 class="modal-title order-window__title">Привет друг!</h5>
+	        <button type="button" class="close order-window__close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
 	      </div>
-	      <div class="modal-body">
+	      <div class="modal-body order-window__body">
 	        <p>Чтобы узнать стоимость или заказать проект, напиши мне на почту или в Telegram!</p>
 	        <p><a class="mail-box__tel" href="tel:+79930218841">+7(993)021-88-41</a></p>
 	        <p><a class="mail-box__mail" href="mailto:ssturmmann@yandex.ru">ssturmmann@yandex.ru</a></p>
@@ -62,7 +72,7 @@
 	<header>
 		<div class="container">
 			<div class="row first-infomartion">
-				<div class="col-md-6 col-3 my-auto upper-menu">
+				<div class="col-md-6 col-3 dropdown my-auto upper-menu">
 					<nav class="upper-menu__nav">
 						<ul class="upper-menu__list">
 							<li><a class="upper-menu__list__element" href="#services">Услуги</a></li>
@@ -70,21 +80,26 @@
 							<li><a class="upper-menu__list__element" href="#price">Стоимость</a></li>
 						</ul>
 					</nav>
-					<button class="menu-button"></button>
-					<button class="menu-button-small"></button>
+					<button class="upper-menu-button dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+					<button class="upper-menu-button-small dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" href="#services">Услуги</a>
+						<a class="dropdown-item" href="#my-works">Портфолио</a>
+						<a class="dropdown-item" href="#price">Стоимость</a>
+					</div>
 				</div>
 				<div class="col-md-3 col-6 my-auto phone-box">
 					<a class="phone-box__tel" href="tel:+79930218841">+7(993)021-88-41</a>
 				</div>
 				<div class="col-md-3 col-3 my-auto callback-box">
-					<button type="button" data-toggle="modal" data-target=".modal" class="callback-box__callback">Заказать звонок</button>
-					<button type="button" data-toggle="modal" data-target=".modal" class="callback-box__callback-icon"></button>
+					<button type="button" data-toggle="modal" data-target=".callback-window" class="callback-box__callback">Заказать звонок</button>
+					<button type="button" data-toggle="modal" data-target=".callback-window" class="callback-box__callback-icon"></button>
 				</div>
 				<div class="w-100"></div>
 				<div class="col name-box">
 					<h1>Табарков Алексей</h1>
 					<small>Python-разработчик</small>
-					<button type="button" data-toggle="modal" data-target=".order" class="regular-button">
+					<button type="button" data-toggle="modal" data-target=".order-window" class="regular-button">
 					      Узнать больше
 					    </button>
 				</div>
@@ -118,7 +133,7 @@
 						Что я делаю
 					</div>
 					</div>
-				<div class="row justify-content-around services">
+				<div class="row justify-content-around examples-box">
 						<div class="col-xl-3 col-sm-5 col-10 examples lending">
 							<img src="img/tools-and-utensils.png">
 
@@ -140,7 +155,7 @@
 							<small>Исправление и доработка существующей вёрстки</small>
 						</div>
 				</div>
-				<div class="row services">
+				<div class="row">
 						<div class="col button-box">
 							<button type="button" data-toggle="modal" data-target=".order" class="regular-button">
 					      		Узнать стоимость

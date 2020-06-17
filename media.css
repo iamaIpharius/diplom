@@ -26,7 +26,11 @@
     text-decoration-line: underline;
     border-bottom: 1px solid #fc557c;
 }
-
+.dropdown-item:hover {
+  background: linear-gradient(to top, #ff8f5a, #ff2f96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 
@@ -181,6 +185,33 @@
   }
 }
 
+@media (max-width: 600px) {
+  .header-first {
+    left: 12%;
+    top: 24%;
+    font-size: 24px;
+  }
+  .header-second {
+    left: 17%;
+    top: 15%;
+    font-size: 24px;
+  }
+  .header-third {
+    left: 9%;
+    top: 40%;
+    font-size: 38px;
+  }
+  .header-fourth {
+    left: 75%;
+    top: 18%;
+    font-size: 24px;
+  }
+  .header-fifth {
+    left: 45%;
+    top: 10%;
+    font-size: 22px;
+  }
+}
 
 
 @media (max-width: 510px) {
@@ -231,4 +262,8 @@
     background-size: auto 100%;
     box-sizing: content-box;
   }
+  .header-third {
+    background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 } 

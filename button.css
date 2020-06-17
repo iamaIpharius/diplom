@@ -75,7 +75,7 @@ button:focus {
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
-.menu-button {
+.upper-menu-button {
 	display: none;
 	width: 45px;
 	height: 32px;
@@ -84,12 +84,28 @@ button:focus {
 	background-repeat: no-repeat;
 	border: 0;
 }
-.menu-button-small {
+.upper-menu-button-small {
 	display: none;
 	width: 24px;
 	height: 18px;
 	background-color: white;
 	background-image: url('img/menubtn-small.png');
 	background-repeat: no-repeat;
+	border: 0;
+}
+
+.dropdown-toggle::after {
+    border: 0;
+}
+.callback-window__send {
+	border-radius: 0;
+	background-color: #ff4e2e;
+	
+	border: 0;
+}
+.callback-window__send:hover, .callback-window__send:active {
+	border-radius: 0;
+	background: #ff2f96;
+	
 	border: 0;
 }
