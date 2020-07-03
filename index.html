@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css">
+	<meta charset="UTF-8">
+	<title>Диплом</title>
+
+	<link rel="preload" href="./fonts/Roboto-Black.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./fonts/Roboto-Black.woff" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./fonts/Roboto-Bold.woff" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./fonts/Roboto-Regular.woff" as="font" type="font/woff2" crossorigin>
+
+
+
+	<link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.default.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="button.css">
-    <link rel="stylesheet" type="text/css" href="sprites.css">
-    <link rel="stylesheet" type="text/css" href="animation.css">
-    <link rel="stylesheet" type="text/css" href="media.css">
+
+	
+    <link rel="stylesheet" type="text/css" href="style.css">
+
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -20,292 +27,191 @@
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
     <script src="https://use.fontawesome.com/c68ea81907.js"></script>
-    <link rel="stylesheet" type="text/css" href="fonts.css">
-    
-	<title>Дипломный проект</title>
 </head>
 <body>
-
-	<!-- всплывающещ окно Заказать звонок -->
-
-	<div class="modal callback-window" tabindex="-1" role="dialog">
-	  <div class="modal-dialog callback-window-dialog" role="document">
-	    <div class="modal-content callback-window-content">
-	      <div class="modal-header callback-window__header">
-	        <h5 class="modal-title callback-window__title">Привет друг!</h5>
-	        <button type="button" class="close callback-window__close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body callback-window__body">
-	        <p>Чтобы заказать звонок, оставь свой номер телефона!</p>
-	        <label for="callback-window__number">Номер телефона</label>
-    		<input type="number" class="form-control" id="callback-window__number">
-    		
-	      </div>
-	      <div class="modal-footer callback-window__footer">
- 			<button type="submit" class="btn btn-primary callback-window__send">Отправить</button>
- 			</div>
-	    </div>
-	  </div>
-	</div>
-
-	<!-- всплывающещ окно узнать стоимость и тд -->
-
-	<div class="modal order-window" tabindex="-1" role="dialog">
-	  <div class="modal-dialog order-window-dialog" role="document">
-	    <div class="modal-content order-window-content">
-	      <div class="modal-header order-window__header">
-	        <h5 class="modal-title order-window__title">Привет друг!</h5>
-	        <button type="button" class="close order-window__close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body order-window__body">
-	        <p>Чтобы узнать стоимость или заказать проект, напиши мне на почту или в Telegram!</p>
-	        <p><a class="mail-box__tel" href="tel:+79930218841">+7(993)021-88-41</a></p>
-	        <p><a class="mail-box__mail" href="mailto:ssturmmann@yandex.ru">ssturmmann@yandex.ru</a></p>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<header>
-		<div class="container">
-			<div class="row first-infomartion">
-				<div class="col-md-6 col-3 dropdown my-auto upper-menu">
-					<nav class="upper-menu__nav">
-						<ul class="upper-menu__list">
-							<li><a class="upper-menu__list__element" href="#services">Услуги</a></li>
-							<li><a class="upper-menu__list__element" href="#my-works">Портфолио</a></li>
-							<li><a class="upper-menu__list__element" href="#price">Стоимость</a></li>
-						</ul>
-					</nav>
-					<button class="upper-menu-button dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-					<button class="upper-menu-button-small dropdown-toggle" type="button" id="dropdownMenuButton-small" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					    <a class="dropdown-item" href="#services">Услуги</a>
-						<a class="dropdown-item" href="#my-works">Портфолио</a>
-						<a class="dropdown-item" href="#price">Стоимость</a>
-					</div>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton-small">
-					    <a class="dropdown-item" href="#services">Услуги</a>
-						<a class="dropdown-item" href="#my-works">Портфолио</a>
-						<a class="dropdown-item" href="#price">Стоимость</a>
-					</div>
-				</div>
-				<div class="col-md-3 col-6 my-auto phone-box">
-					<a class="phone-box__tel" href="tel:+79930218841">+7(993)021-88-41</a>
-				</div>
-				<div class="col-md-3 col-3 my-auto callback-box">
-					<button type="button" data-toggle="modal" data-target=".callback-window" class="callback-box__callback">Заказать звонок</button>
-					<button type="button" data-toggle="modal" data-target=".callback-window" class="callback-box__callback-icon"></button>
-				</div>
-				<div class="w-100"></div>
-				<div class="col name-box">
-					<h1>Табарков Алексей</h1>
-					<small>Python-разработчик</small>
-					<button type="button" data-toggle="modal" data-target=".order-window" class="regular-button">
-					      Узнать больше
-					    </button>
-				</div>
-			</div>	
-		</div>
+	<header class="header">
+		<article class="container">
+			<section class="header-nav-and-callback">
+				<button class="menu-btn upper-menu-button"></button>
+				<button class="menu-btn upper-menu-button-small"></button>
+				<nav class="header-nav">
+					<ul class="header-nav__list">
+						<li class="header-nav__item"><a class="header-nav__link" href="#services">Услуги</a></li>
+						<li class="header-nav__item"><a class="header-nav__link" href="#price">Стоимость</a></li>
+						<li class="header-nav__item"><a class="header-nav__link" href="#works">Портфолио</a></li>
+					</ul>
+				</nav>
+				<a class="header-phone__link-hidden" href="tel:+79930218841">+7(993)021-88-41</a>
+				<section class="header-phone-box">
+					<a class="header-phone__link" href="tel:+79930218841">+7(993)021-88-41</a>
+					<button type="button" class="callback callback-big">Заказать звонок</button>
+					<button type="button" class="callback callback-small"></button>
+				</section>
+			</section>
+			<section class="name-box">
+				<h1 class="name-box__name">Табарков Алексей</h1>
+				<small class="name-box__profession">Python-разработчик</small>
+				<button type="button" class="regular">Узнать больше</button>
+			</section>
+		</article>
 		<div class="header-animation header-first">#</div>
         <div class="header-animation header-second">{ }</div>
         <div class="header-animation header-third">&lt;/&gt;</div>
         <div class="header-animation header-fourth">&lt;div&gt;</div>
         <div class="header-animation header-fifth">&lt;div&gt;</div>
 	</header>
-	<main>
-		
-		<div class="services-box">
+	<main class="main">
+		<article class="skills">
 			<div class="container">
-				<div class="row down-name">
-					<div class="col-12 name-box down-name-box">
-						<h1>Табарков Алексей</h1>
-					</div>
-					<div class="col-12 name-box down-name-box">
-						<small>Python-разработчик</small>
-					</div>
-					<div class="col-12 name-box down-name-box">
-						<button type="button" data-toggle="modal" data-target=".order-window" class="regular-button">
-							      Узнать больше
-						</button>
-					</div>
-				</div>
-				<div class="row services">
-					<div class="col headline" id="services">
-						Что я делаю
-					</div>
-					</div>
-				<div class="row justify-content-around examples-box">
-						<div class="col-xl-3 col-sm-5 col-10 examples lending">
-							<img src="img/tools-and-utensils.png" alt="tools-and-utensils">
-
-							<small>Вёрстка лендинг-страниц и сайтов любой сложности</small>
+				<section class="skills-section">
+					<section class="name-box-small">
+						<h2 class="name-box-small__name">Табарков Алексей</h2>
+						<small class="name-box-small__profession">Python-разработчик</small>
+						<button type="button" class="regular">Узнать больше</button>
+					</section>
+					<h2 class="headline" id="services">Что я делаю</h2>
+					<section class="skills-box">
+						<div class="skills-box__row">
+							<div class="skills-box__item">
+								<img loading="lazy" class="skills-box__img" src="img/tools-and-utensils.png" alt="tools-and-utensils">
+								<small class="skills-box__description">Вёрстка лендинг-страниц и сайтов любой сложности</small>
+							</div>
+							<div class="skills-box__item">
+								<img loading="lazy" class="skills-box__img" src="img/responsive.png" alt="responsive">
+								<small class="skills-box__description">Адаптивная верстка под все браузеры и устройства</small>
+							</div>
 						</div>
-						<div class="col-xl-3 col-sm-5 col-10 examples adopt">
-							<img src="img/responsive.png" alt="responsive">
-
-							<small>Адаптивная верстка под все браузеры и устройства</small>
-						</div>
-						<div class="col-xl-3 col-sm-5 col-10 examples frontend">
-							<img src="img/programming.png" alt="programming">
-
-							<small>Frontend-разработка и программирование</small>
-						</div>
-						<div class="col-xl-3 col-sm-5 col-10 examples fix">
-							<img src="img/coding.png" alt="coding">
-
-							<small>Исправление и доработка существующей вёрстки</small>
-						</div>
-				</div>
-				<div class="row">
-						<div class="col button-box">
-							<button type="button" data-toggle="modal" data-target=".order-window" class="regular-button">
-					      		Узнать стоимость
-					    	</button>
-						</div>			
-				</div>
-				
+						<div class="skills-box__row">
+							<div class="skills-box__item">
+								<img loading="lazy" class="skills-box__img" src="img/programming.png" alt="programming">
+								<small class="skills-box__description">Frontend-разработка и программирование</small>
+							</div>
+							<div class="skills-box__item">
+								<img loading="lazy" class="skills-box__img" src="img/coding.png" alt="coding">
+								<small class="skills-box__description">Исправление и доработка существующей вёрстки</small>
+							</div>
+						</div>						
+					</section>
+					<button type="button" class="regular">Узнать стоимость</button>
+				</section>
 			</div>
-		</div>
-		<div class="my-works-box">
+		</article>
+		<article class="my-works">
 			<div class="container">
-				<div class="row my-works" id="my-works">
-					<div class="col headline">
-						Мои работы
-					</div>
-					<div class="w-100"></div>
-					<div class="col my-works__carousel">
-
-						<button class="left-arrow"></button>
-						<button class="right-arrow"></button>
-
-						<div class="owl-carousel owl-theme">
+				<section class="my-works-box">
+					<h2 class="headline" id="works">Примеры моих работ</h2>
+					<div class="my-works-box__slider-box">
+						<button type="button" class="left-arrow"></button>
+						<button type="button" class="right-arrow"></button>
+						<div class="my-works-box__slider owl-carousel owl-theme">
 							
-						  <div class="mr-2 ml-2">
-						  	<div class="card text-center">
-						  		<img src="img/project1.png" class="card-img-top" alt="Сайт психолога Веры Антоновой">
-						  		<div class="card-body">
-						  			<h5 class="card-title">Сайт психолога Веры Антоновой</h5>
-						  		</div>
+						  	<div class="my-works-box__item">
+						  		<img loading="lazy" src="img/project1.png" class="my-works-box__img" alt="Сайт психолога Веры Антоновой">
+						  		<span class="my-works-box__title">Сайт психолога Веры Антоновой</span>
 						  	</div>
-						  </div>
 
-						  <div class="mr-2 ml-2">
-						  	<div class="card text-center">
-						  		<img src="img/project2.png" class="card-img-top" alt="Сайт магазина детской одежды">
-						  		<div class="card-body">
-						  			<h5 class="card-title">Сайт магазина детской одежды</h5>
-						  		</div>
+						  	<div class="my-works-box__item">
+						  		<img loading="lazy" src="img/project2.png" class="my-works-box__img" alt="Сайт магазина детской одежды">
+						  		<span class="my-works-box__title">Сайт магазина детской одежды</span>
 						  	</div>
-						  </div>
 
-						  <div class="mr-2 ml-2">
-						  	<div class="card text-center">
-						  		<img src="img/project3.png" class="card-img-top" alt="Сайт магазина Рыбоlove">
-						  		<div class="card-body">
-						  			<h5 class="card-title">Сайт магазина "Рыбоlove"</h5>
-						  		</div>
+						  	<div class="my-works-box__item">
+						  		<img loading="lazy" src="img/project3.png" class="my-works-box__img" alt="Сайт магазина Рыбоlove">
+						  		<span class="my-works-box__title">Сайт магазина "Рыбоlove"</span>
+
 						  	</div>
-						  </div>
-
-						  <div class="mr-2 ml-2">
-						  	<div class="card text-center">
-						  		<img src="img/project4.png" class="card-img-top" alt="New California republic">
-						  		<div class="card-body">
-						  			<h5 class="card-title">Флаг Новой Калифорнийской республики (не моё)</h5>
-						  		</div>
-						  	</div>
-						  </div>
-
-
 						</div>
 					</div>
-					<div class="w-100"></div>
-					<div class="col button-box">
-						<button type="button" data-toggle="modal" data-target=".order-window" class="regular-button">
-					      Заказать проект
-					    </button>
-					</div>
-				</div>
+					<button type="button" class="regular">Заказать проект</button>
+				</section>
 			</div>
-		</div>
-		<div class="price-box">
+		</article>
+		<article class="price" id="price">
 			<div class="container">
-				<div class="row price">
-					<div class="col price-text" id="price">
-						<h2>Адаптивная верстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</h2>
-						<h6>* Срок и стоимость могут отличаться от заявленных и расчитываются индивидуально, в зависимости от сложности задач.</h6>
-					</div>
-				</div>
+				<h3 class="price__main-text">Адаптивная верстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</h3>
+				<small class="price__small-text">* Срок и стоимость могут отличаться от заявленных и расчитываются индивидуально, в зависимости от сложности задач.</small>
 			</div>
 			<div class="price-animation price-first">#</div>
 	        <div class="price-animation price-second">{ }</div>
 	        <div class="price-animation price-third">&lt;/&gt;</div>
 	        <div class="price-animation price-fourth">{ }</div>
 	        <div class="price-animation price-fifth">&lt;div&gt;</div>
-		</div>
+		</article>
 	</main>
-	<footer>
-		<div class="container">
-			<div class="row justify-content-around contacts">
-				<div class="col-xl-4 col-md-3 col-10 downer-menu">
-					<nav>
-						<ul class="downer-menu__list">
-							<li><a class="downer-menu__list__element" href="#services">Услуги</a></li>
-							<li><a class="downer-menu__list__element" href="#my-works">Портфолио</a></li>
-							<li><a class="downer-menu__list__element" href="#price">Стоимость</a></li>
-						</ul>	
-					</nav>
-				</div>
-				<div class="col-xl-4 col-md-5 col-10 mail-box">
-					<div class="tel">
-						<i class="fa fa-phone fa-2x mail-box__icon-tel" aria-hidden="true"></i>
-						<a class="mail-box__tel" href="tel:+79930218841">+7(993)021-88-41</a>
-					</div>
-					<div class="mail">
-						<i class="fa fa-envelope fa-2x mail-box__icon-mail" aria-hidden="true"></i>
-						<a class="mail-box__mail" href="mailto:ssturmmann@yandex.ru">ssturmmann@yandex.ru</a>
-					</div>
-				</div>
-				<div class="col-xl-4 col-md-4 col-10 social-networks">
-					<button type="button" data-toggle="modal" data-target=".callback-window" class="social-networks__callback">Заказать звонок</button>
-					<br>
-					<div class="social-networks__logos">
-						<div class="vk"><a href="#"></a></div>
-					    <div class="facebook-logo"><a href="#"></a></div>
-					    <div class="twitter-logo-silhouette"><a href="#"></a></div>
-					    <div class="instagram"><a href="#"></a></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="copyright-box">
+	<footer class="footer">
+		<article class="footer-nav-and-contacts">
 			<div class="container">
-				<div class="row copyright">
-					<div class="col-12 copyright__itself">
-						<h6>Icon made by Freepik from www.flaticon.com</h6>
-					</div>
-					<div class="col-12 copyright__itself">
-						<h6>&copy; Табарков Алексей, 2020</h6>
-					</div>
-				</div>
+				<section class="footer-nav-and-contacts__box">
+					<section class="footer-nav-box">
+						<nav class="footer-nav">
+							<ul class="footer-nav__list">
+								<li class="footer-nav__item"><a class="footer-nav__link" href="#services">Услуги</a></li>
+								<li class="footer-nav__item"><a class="footer-nav__link" href="#price">Стоимость</a></li>
+								<li class="footer-nav__item"><a class="footer-nav__link" href="#works">Портфолио</a></li>
+							</ul>
+						</nav>
+					</section>
+					<section class="footer-contacts-box">
+							<ul class="footer-contacts-list">
+								<li class="footer-contacts-item">
+									<i class="fa fa-phone fa-2x footer-contacts-box__phone-icon" aria-hidden="true"></i>
+									<a class="footer-contacts-box__phone" href="tel:+79930218841">+7(993)021-88-41</a>
+								</li>
+								<li class="footer-contacts-item">
+									<i class="fa fa-envelope fa-2x footer-contacts-box__mail-icon" aria-hidden="true"></i>
+									<a class="footer-contacts-box__mail" href="mailto:ssturmmann@yandex.ru">ssturmmann@yandex.ru</a>
+								</li>
+							</ul>
+					</section>
+					<section class="footer-callback">
+						<button type="button" class="callback callback-big">Заказать звонок</button>
+						<div class="footer-callback__sprites-box">
+							<div class="vk"><a href="#"></a></div>
+						    <div class="facebook-logo"><a href="#"></a></div>
+						    <div class="twitter-logo-silhouette"><a href="#"></a></div>
+						    <div class="instagram"><a href="#"></a></div>
+						</div>
+					</section>
+				</section>
 			</div>
-		</div>
-		
+		</article>
+		<article class="copyright">
+			<div class="container">
+				<h6 class="copyright__item">Icon made by Freepik from www.flaticon.com</h6>
+				<h6 class="copyright__item">&copy; Табарков Алексей, 2020</h6>
+			</div>
+		</article>
 	</footer>
 
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-
-<script src="libs/owlcarousel2/owl.carousel.min.js"></script>
-<script src="script.js"></script>
+	<div class="modal" id="modal-callback">
+		<button class="modal__close-button" id="close-button-callback"><i class="fa fa-times fa-2x"></i></button>
+		<h2 class="modal__hi">Привет, друг!</h2>
+		<p class="modal__text">Чтобы заказать звонок, оставь свой номер телефона ниже</p>
+		<label for="submit" class="modal__label"><input type="tel" class="modal-input" placeholder="Номер телефона"></label>
+		<br>
+		<button type="submit" class="modal__send-button" id="submit">Отправить</button>
+	</div>
+	<div class="modal" id="modal-more">
+		<button class="modal__close-button" id="close-button-more"><i class="fa fa-times fa-2x"></i></button>
+		<h2 class="modal__hi">Привет, друг!</h2>
+		<p class="modal__text">Чтобы узнать больше, напиши мне на почту или в телеграмм</p>
+		<a class="footer-contacts-box__phone" href="tel:+79930218841">+7(993)021-88-41</a>
+		<br>
+		<a class="footer-contacts-box__mail" href="mailto:ssturmmann@yandex.ru">ssturmmann@yandex.ru</a>
+	</div>
+	<aside class="aside-menu">
+		<nav class="aside-nav">
+			<ul class="aside-nav__list">
+				<li class="aside-nav__item"><a class="aside-nav__link" href="#services">Услуги</a></li>
+				<li class="aside-nav__item"><a class="aside-nav__link" href="#price">Стоимость</a></li>
+				<li class="aside-nav__item"><a class="aside-nav__link" href="#works">Портфолио</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<div class="modal-overlay" id="modal-overlay"></div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="libs/owlcarousel2/owl.carousel.min.js"></script>
+	<script src="script.js"></script>
 
 </body>
 </html>
