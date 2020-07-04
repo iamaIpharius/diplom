@@ -20,6 +20,7 @@ body {
 	font-size: 54px;
 }
 .header {
+	position: relative;
 	height: 768px;
 	background: url('img/background.jpg');
 	background-repeat: no-repeat;
@@ -520,7 +521,10 @@ position: absolute;
 		max-width: 945px;
 	}
 	.header-fourth {
-	    top: 65%;
+	    top: 80%;
+	}
+	.header-third {
+	    top: 76%;
 	}
 	.skills-section {
 		.skills-box {
@@ -716,6 +720,26 @@ position: absolute;
 	.name-box-small {
 		display: flex;
 	}
+	.header-first {
+	  left: 10%;
+	  top: 30%;
+	}
+	.header-second {
+	  left: 9%;
+	  top: 15%;
+	}
+	.header-third {
+	  left: 18%;
+	  top: 55%;
+	}
+	.header-fourth {
+	  left: 80%;
+	  top: 15%;
+	}
+	.header-fifth {
+	  left: 45%;
+	  top: 15%;
+	}
 }
 @media (max-width: 540px) {
 	.price {
@@ -752,6 +776,26 @@ position: absolute;
 		&:hover {
 			background-color: #f82370;
 		}
+	}
+	.header-first {
+	  left: 10%;
+	  top: 30%;
+	}
+	.header-second {
+	  left: 9%;
+	  top: 15%;
+	}
+	.header-third {
+	  left: 5%;
+	  top: 45%;
+	}
+	.header-fourth {
+	  left: 70%;
+	  top: 15%;
+	}
+	.header-fifth {
+	  left: 35%;
+	  top: 12%;
 	}
 	   
 }
@@ -797,22 +841,22 @@ position: absolute;
 	}
 	.header-second {
 	  left: 9%;
-	  top: 15%;
+	  top: 35%;
 	  font-size: 28px;
 	}
 	.header-third {
 	  left: 18%;
-	  top: 7%;
+	  top: 15%;
 	  font-size: 24px;
 	}
 	.header-fourth {
 	  left: 50%;
-	  top: 9%;
+	  top: 17%;
 	  font-size: 18px;
 	}
 	.header-fifth {
 	  left: 80%;
-	  top: 15%;
+	  top: 27%;
 	  font-size: 15px;
 	}
 	.header-phone__link-hidden {
