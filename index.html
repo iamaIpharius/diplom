@@ -3,13 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Диплом</title>
-
+	<meta name="viewport" content="width=device-width; initial-scale=1">
 	<link rel="preload" href="./fonts/Roboto-Black.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="./fonts/Roboto-Black.woff" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="./fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="./fonts/Roboto-Bold.woff" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="./fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="./fonts/Roboto-Regular.woff" as="font" type="font/woff2" crossorigin>
+
 
 
 
@@ -17,7 +15,7 @@
     <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.default.css">
 
 	
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -26,14 +24,17 @@
     <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://use.fontawesome.com/c68ea81907.js"></script>
+    <script defer="" src="https://use.fontawesome.com/c68ea81907.js"></script>
+    <script defer="" src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script defer="" src="libs/owlcarousel2/owl.carousel.min.js"></script>
+	<script defer="" src="js/script.js"></script>
 </head>
 <body>
 	<header class="header">
 		<article class="container">
 			<section class="header-nav-and-callback">
-				<button class="menu-btn upper-menu-button"></button>
-				<button class="menu-btn upper-menu-button-small"></button>
+				<button aria-label="Menu" class="menu-btn upper-menu-button"></button>
+				<button aria-label="Menu" class="menu-btn upper-menu-button-small"></button>
 				<nav class="header-nav">
 					<ul class="header-nav__list">
 						<li class="header-nav__item"><a class="header-nav__link" href="#services">Услуги</a></li>
@@ -44,14 +45,14 @@
 				<a class="header-phone__link-hidden" href="tel:+79930218841">+7(993)021-88-41</a>
 				<section class="header-phone-box">
 					<a class="header-phone__link" href="tel:+79930218841">+7(993)021-88-41</a>
-					<button type="button" class="callback callback-big">Заказать звонок</button>
-					<button type="button" class="callback callback-small"></button>
+					<button aria-label="Заказать звонок" type="button" class="callback callback-big">Заказать звонок</button>
+					<button aria-label="Заказать звонок" type="button" class="callback callback-small"></button>
 				</section>
 			</section>
 			<section class="name-box">
 				<h1 class="name-box__name">Табарков Алексей</h1>
 				<small class="name-box__profession">Python-разработчик</small>
-				<button type="button" class="regular">Узнать больше</button>
+				<button aria-label="Узнать больше" type="button" class="regular">Узнать больше</button>
 			</section>
 		</article>
 		<div class="header-animation header-first">#</div>
@@ -92,7 +93,7 @@
 							</div>
 						</div>						
 					</section>
-					<button type="button" class="regular">Узнать стоимость</button>
+					<button aria-label="Узнать стоимость" type="button" class="regular">Узнать стоимость</button>
 				</section>
 			</div>
 		</article>
@@ -101,8 +102,8 @@
 				<section class="my-works-box">
 					<h2 class="headline" id="works">Примеры моих работ</h2>
 					<div class="my-works-box__slider-box">
-						<button type="button" class="left-arrow"></button>
-						<button type="button" class="right-arrow"></button>
+						<button aria-label="Влево" type="button" class="left-arrow"></button>
+						<button aria-label="Вправо" type="button" class="right-arrow"></button>
 						<div class="my-works-box__slider owl-carousel owl-theme">
 							
 						  	<div class="my-works-box__item">
@@ -122,7 +123,7 @@
 						  	</div>
 						</div>
 					</div>
-					<button type="button" class="regular">Заказать проект</button>
+					<button aria-label="Заказать проект" type="button" class="regular">Заказать проект</button>
 				</section>
 			</div>
 		</article>
@@ -164,12 +165,12 @@
 							</ul>
 					</section>
 					<section class="footer-callback">
-						<button type="button" class="callback callback-big">Заказать звонок</button>
+						<button aria-label="Заказать звонок" type="button" class="callback callback-big">Заказать звонок</button>
 						<div class="footer-callback__sprites-box">
-							<div class="vk"><a href="#"></a></div>
-						    <div class="facebook-logo"><a href="#"></a></div>
-						    <div class="twitter-logo-silhouette"><a href="#"></a></div>
-						    <div class="instagram"><a href="#"></a></div>
+							<div aria-label="ВКонтакте" class="vk"><a href="#"></a></div>
+						    <div aria-label="Facebook" class="facebook-logo"><a href="#"></a></div>
+						    <div aria-label="Twitter" class="twitter-logo-silhouette"><a href="#"></a></div>
+						    <div aria-label="Instagram" class="instagram"><a href="#"></a></div>
 						</div>
 					</section>
 				</section>
@@ -184,15 +185,15 @@
 	</footer>
 
 	<div class="modal" id="modal-callback">
-		<button class="modal__close-button" id="close-button-callback"><i class="fa fa-times fa-2x"></i></button>
+		<button aria-label="Закрыть" class="modal__close-button" id="close-button-callback"><i class="fa fa-times fa-2x"></i></button>
 		<h2 class="modal__hi">Привет, друг!</h2>
 		<p class="modal__text">Чтобы заказать звонок, оставь свой номер телефона ниже</p>
 		<label for="submit" class="modal__label"><input type="tel" class="modal-input" placeholder="Номер телефона"></label>
 		<br>
-		<button type="submit" class="modal__send-button" id="submit">Отправить</button>
+		<button aria-label="Отправить" type="submit" class="modal__send-button" id="submit">Отправить</button>
 	</div>
 	<div class="modal" id="modal-more">
-		<button class="modal__close-button" id="close-button-more"><i class="fa fa-times fa-2x"></i></button>
+		<button aria-label="Закрыть" class="modal__close-button" id="close-button-more"><i class="fa fa-times fa-2x"></i></button>
 		<h2 class="modal__hi">Привет, друг!</h2>
 		<p class="modal__text">Чтобы узнать больше, напиши мне на почту или в телеграмм</p>
 		<a class="footer-contacts-box__phone" href="tel:+79930218841">+7(993)021-88-41</a>
@@ -209,9 +210,7 @@
 		</nav>
 	</aside>
 	<div class="modal-overlay" id="modal-overlay"></div>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="libs/owlcarousel2/owl.carousel.min.js"></script>
-	<script src="script.js"></script>
+	
 
 </body>
 </html>

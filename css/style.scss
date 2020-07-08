@@ -22,7 +22,7 @@ body {
 .header {
 	position: relative;
 	height: 768px;
-	background: url('img/background.jpg');
+	background: url('../img/background.jpg');
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: auto 100%;
@@ -501,7 +501,7 @@ position: absolute;
 	.header {
 		height: 768px;
 		background-color: red;
-		background: url('img/background1024.jpg');
+		background: url('../img/background1024.jpg');
 		background-repeat: no-repeat;
 		background-position: right;
 		background-size: auto 100%;
@@ -828,7 +828,7 @@ position: absolute;
 @media (max-width: 320px) {
 	.header {
 		height: 468px;
-		background: url('img/background320.jpg');
+		background: url('../img/background320.jpg');
 		background-repeat: no-repeat;
 		background-position: right;
 		background-size: auto 100%;
