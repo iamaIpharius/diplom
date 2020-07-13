@@ -60,11 +60,9 @@ body {
 	 		margin-right: 30px;
 	 		font-size: 25px;
 	 		color: black;
-	 		border-bottom: 0 solid white;
-	 		transition: color 0.2s ease-out, border-bottom 0.2s ease-out;
+	 		transition: color 0.2s ease-out;
 	 		&:hover {
 				color: #fba1b6;
-				border-bottom: 1px solid #fba1b6;
 	 		}
 	 	}
 	 }
@@ -233,11 +231,9 @@ body {
 		margin-left: 20px;
 		font-size: 25px;
 		color: black;
-		transition: color 0.2s ease-out, border-bottom 0.2s ease-out;
-		border-bottom: 0 solid white;
+		transition: color 0.2s ease-out;
 	 		&:hover {
 				color: #fba1b6;
-				border-bottom: 1px solid #fba1b6;
 	 		}
 	}
 }
@@ -388,15 +384,19 @@ position: absolute;
   	line-height: 1.5;
   }
   input {
-  	background-color: white;
-  	border: 1px solid #f82370;
-  	height: 30px;
-  	width: 170px;
+  	background-color: #F7F7F7;
+  	border: 1px solid #EEEEEE;
+  	height: 50px;
+  	width: 370px;
   	margin-bottom: 50px;
   	padding: 3px;
+  	transition: border 0.2s ease-out;
+  	&:hover {
+		border: 1px solid #f82370;
+	}
   }
   .modal__send-button {
-	width: 180px;
+	width: 140px;
 	height: 40px;
 	border: 0;
 	background-color: #ff4e2e;
@@ -413,12 +413,16 @@ position: absolute;
   	margin-bottom: 15px;
   	font-size: 20px;
 	color: black;
-	transition: color 0.2s ease-out, border-bottom 0.2s ease-out;
-	border-bottom: 0 solid white;
+	transition: color 0.2s ease-out;
 	 	&:hover {
-			color: #fba1b6;
-			border-bottom: 1px solid #fba1b6;
+			color: #fba1b6;;
 	 	}
+  }
+  h5 {
+  	margin: 20px 0;
+  	span {
+  		color: red;
+  	}
   }
 }
 .modal-overlay {
@@ -682,11 +686,9 @@ position: absolute;
 		display: flex;
 		color: black;
 		font-size: 25px;
-	 	border-bottom: 0 solid white;
-	 	transition: color 0.2s ease-out, border-bottom 0.2s ease-out;
+	 	transition: color 0.2s ease-out;
 	 	&:hover {
 			color: #fba1b6;
-			border-bottom: 1px solid #fba1b6;
 	 	}
 	}
 	.header-phone-box {
