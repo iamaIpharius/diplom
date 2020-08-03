@@ -387,7 +387,7 @@ position: absolute;
   	background-color: #F7F7F7;
   	border: 1px solid #EEEEEE;
   	height: 50px;
-  	width: 370px;
+  	width: 300px;
   	margin-bottom: 50px;
   	padding: 3px;
   	transition: border 0.2s ease-out;
@@ -798,6 +798,10 @@ position: absolute;
 	.header-fifth {
 	  left: 35%;
 	  top: 12%;
+	}
+	.modal input {
+		width: 230px;
+		margin-bottom: 20px;
 	}
 	   
 }
